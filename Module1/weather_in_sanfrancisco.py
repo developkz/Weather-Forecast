@@ -1,5 +1,12 @@
+
 import requests
 
-url = "https://wttr.in//san%20francisco?nTqu&lang=en"
-html_string = requests.get(url)
-print(html_string.text)
+url_template = "https://wttr.in/{}"
+cities = ["svo", "London", "Череповец"]
+parameters = {'lang': 'ru'}
+for city in cities:
+    # print(city.)
+    url = url_template.format(str(city))
+    print(url)
+    html_string = requests.get(url, params=parameters)
+    print(html_string.text)
