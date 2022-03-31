@@ -1,7 +1,6 @@
-# devman
-Devman Cources Homework
+## Devman Homework
 
 В этом репозитории хранятся мои домашние работы к курсу Devman Python
 
-### Module1
+### Module1/
 -weather_in_sanfrancisco
