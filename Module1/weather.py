@@ -11,3 +11,4 @@ for city in cities:
     html_string = requests.get(url, params=parameters)
     html_string.raise_for_status()
     print(html_string.text)
+    print(requests.__version__)
