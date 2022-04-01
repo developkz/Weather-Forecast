@@ -7,13 +7,12 @@ locations = [
     'Череповец'
 ]
 
-parameters = {'lang': 'ru'}
+parameters = {'lang': 'ru', 'T': '', 'n': ''}
 
 
 for location in locations:
-    url_template = 'https://wttr.in/{0}{1}'
-    url = url_template.format(location, '?Tn')
-    # print(url)
-    weather_request = requests.get(url, params=parameters)
-    weather_request.raise_for_status()
-    print(weather_request.text)
+    url_template = 'https://wttr.in/{}'
+    url = url_template.format(location)
+    weather_response = requests.get(url, params=parameters)
+    weather_response.raise_for_status()
+    print(weather_response.text)
