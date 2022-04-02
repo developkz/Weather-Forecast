@@ -3,11 +3,11 @@ import requests
 
 locations = [
     'svo', 
-    'London', 
+    'san francisco', 
     'Череповец'
 ]
 
-parameters = {'lang': 'ru', 'T': '', 'n': ''}
+parameters = {'T': '', 'n': '', 'm': '', 'lang': 'ru'}
 
 
 for location in locations:
