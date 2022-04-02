@@ -7,7 +7,12 @@ locations = [
     'Череповец'
 ]
 
-parameters = {'T': '', 'n': '', 'm': '', 'lang': 'ru'}
+parameters = {
+    'T': '', 
+    'n': '', 
+    'm': '', 
+    'lang': 'ru'
+}
 
 
 for location in locations:
